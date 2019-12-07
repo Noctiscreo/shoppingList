@@ -20,4 +20,11 @@ return function (App $app) {
         return $logger;
     };
 
+    // Connects to 'shopping' db.
+    $container['db'] = function() {
+        $db = new PDO ('mysql:host=127.0.0.1;dbname=shopping', 'root', 'password');
+        return $db;
+    };
+
 };
+
