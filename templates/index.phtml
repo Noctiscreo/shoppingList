@@ -13,11 +13,14 @@
             <input class="newItem" type="text" name="item">
             <input type="submit" value="Add Item">
         </form>
-
-<!--        --><?php //if (isset($name)) : ?>
-<!--            <h2>Hello --><?//= htmlspecialchars($name); ?><!--!</h2>-->
-<!--        --><?php //else: ?>
-<!--            <p>Try <a href="http://www.slimframework.com">SlimFramework</a></p>-->
-<!--        --><?php //endif; ?>
+        <?php
+        $html = '';
+        foreach($items as $item){
+            $html .= '<form>'
+                . '<p>' . $item['item'] . '</p>'
+                . '</form>';
+        }
+        echo $html;
+        ?>
     </body>
 </html>
