@@ -28,6 +28,7 @@ return function (App $app) {
     // Registers the ItemsModel factory.
     $container['ItemsModel'] = new Example\Factories\ItemsModelFactory();
     $container['HomepageController'] = new Example\Factories\HomepageControllerFactory();
+//    $container['HomepageController'] = new Example\Factories\AddItemControllerFactory();
 
 };
 

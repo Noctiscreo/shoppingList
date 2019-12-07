@@ -21,4 +21,10 @@ class ItemsModel
         return $items;
     }
 
+    function addItem($item)
+    {
+    $query = $this->db->prepare('INSERT INTO `shopping`(`item`) VALUES(:item)');
+    return $query->execute([$item]);
+    }
+
 }
