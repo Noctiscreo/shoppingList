@@ -3,9 +3,9 @@ namespace Example\Factories;
 use Example\Controllers\HomepageController;
 use Psr\Container\ContainerInterface;
 
-class itemsModelFactory
+class HomepageControllerFactory
 {
-    // Allows class to be used like a function (factories must be callable).
+    // Allows a class to be used like a function. Because factories must be callable (used like a function).
     public function __invoke(ContainerInterface $container)
     {
         // Getting the 'ItemsModel' out of the $container (DIC) and putting it into $model.

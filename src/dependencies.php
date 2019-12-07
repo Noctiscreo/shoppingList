@@ -25,6 +25,9 @@ return function (App $app) {
         $db = new PDO ('mysql:host=127.0.0.1;dbname=shopping', 'root', 'password');
         return $db;
     };
+    // Registers the ItemsModel factory.
+    $container['ItemsModel'] = new Example\Factories\ItemsModelFactory();
+    $container['HomepageController'] = new Example\Factories\HomepageControllerFactory();
 
 };
 
